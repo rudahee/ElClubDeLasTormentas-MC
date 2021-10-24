@@ -51,7 +51,6 @@ import { APP_BASE_HREF } from '@angular/common';
     MatStepperModule,
     MatListModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
