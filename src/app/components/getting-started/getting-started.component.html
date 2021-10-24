@@ -1,0 +1,80 @@
+<main>
+  <mat-card>
+    <mat-card-title>Empezando</mat-card-title>
+    <mat-card-content>
+      <mat-stepper #stepper>
+        <mat-step label="Requisitos" state="icon">
+          <p>Es necesario tener los siguientes requisitos:</p>
+          <mat-selection-list #requisitos>
+            <mat-list-option *ngFor="let item of list_requisitos">
+              {{item}}
+            </mat-list-option>
+          </mat-selection-list>
+          <p><i><a href="
+            https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.exe">Link para descargar Java 17</a></i></p>
+          <br>
+          <div class="button-right">
+            <button *ngIf="requisitos.selectedOptions.selected.length != list_requisitos.length" mat-raised-button color="accent" disabled>Empezar</button>
+            <button *ngIf="requisitos.selectedOptions.selected.length == list_requisitos.length" mat-raised-button color="accent" matStepperNext>Empezar</button>
+          </div>
+        </mat-step>
+        <mat-step label="Instalando Forge" state="icon">
+          <h4>Lo primero será descargar Forge para Minecraft 1.16.5.</h4>
+          <h4>Para ello necesitamos la version 36.2.8 de Forge.</h4>
+          <p><i><a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.2.8/forge-1.16.5-36.2.8-installer.jar">Link de descarga de Forge</a></i></p>
+          <br>
+          <h4>Una vez descargado, podemos empezar la instalacion haciendo doble click en el archivo que se ha descargado.</h4>
+          <h4>Debemos seleccionar la version "Client" cuando el instalador nos pregunte cual queremos.</h4>
+          <h4>Cuando nos salga una ventana emergente, presionamos OK y estaremos listos para instalar mods.</h4>
+
+          <div class="width-full">
+            <button  mat-raised-button color="accent" matStepperPrevious>Atras</button>
+            <span class="spacer"></span>
+            <button  mat-raised-button color="accent" matStepperNext>Continuar</button>
+          </div>
+        </mat-step>
+        <mat-step label="Mods Obligatorios" state="icon">
+          <h4>Para instalar los mods necesitamos la carpeta de mods que se encuentra en el servidor de Discord.</h4>
+          <h4>Vamos a extraer la carpeta en la ruta donde tengamos instalado minecraft.</h4>
+          <p><i>Puedes acceder a tu carpeta .minecraft poniendo <b>%appdata%</b> en el buscador de Windows.</i></p>
+
+          <button  mat-raised-button>
+            Ver lista de Mods obligatorios <mat-icon>open_in_new</mat-icon>
+          </button>
+
+          <br>
+          <br>
+          <div class="width-full">
+            <button  mat-raised-button color="accent" matStepperPrevious>Atras</button>
+            <span class="spacer"></span>
+            <button  mat-raised-button color="accent" matStepperNext>Continuar</button>
+          </div>
+        </mat-step>
+        <mat-step label="Mods Opcionales" state="icon">
+          <h4>Para instalar los mods opcionales, necesitamos la carpeta "Opcionales" que se encuentra en el servidor de Discord.</h4>
+          <h4>Como en el paso anterior, vamos a extraer los mods en nuestra carpeta .minecraft/mods.</h4>
+          <p><i>Puedes acceder a tu carpeta .minecraft poniendo <b>%appdata%</b> en el buscador de Windows.</i></p>
+
+          <h4>Al no ser obligatorios, puedes introducir solo los mods que quieras.</h4>
+
+          <h4>Una vez finalizado el proceso, inicia minecraft (seleccionando Forge) y podras agregar el servidor en la pestaña MultiPlayer.</h4>
+
+          <h4>Cuando hayas llegado hasta aquí mencionanos en el canal #Entrada de Discord.</h4>
+
+
+          <button  mat-raised-button>
+            Ver lista de Mods opcionales <mat-icon>open_in_new</mat-icon>
+          </button>
+
+        </mat-step>
+      </mat-stepper>
+    </mat-card-content>
+  </mat-card>
+  <br>
+</main>
+
+
+  <!-- Icon overrides. -->
+  <ng-template matStepperIcon="icon">
+    <mat-icon>engineering</mat-icon>
+  </ng-template>

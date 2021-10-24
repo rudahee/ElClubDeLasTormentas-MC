@@ -1,0 +1,30 @@
+main {
+  margin-top: 2%;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  width: 100%;
+  text-align: center;
+}
+
+.button-right {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.width-full {
+  display: flex;
+  width: 100%;
+}
+

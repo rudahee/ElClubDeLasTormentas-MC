@@ -1,0 +1,45 @@
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.acordion {
+  width: 70%;
+}
+
+main {
+  margin-top: 2%;
+  padding-bottom: 4%;
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista {
+  width: 80%;
+  .elemento {
+    width: 80%;
+  }
+  .descripcion {
+    width: 80%;
+    margin-left: 10%;
+    i {
+      font-size: 0.9em;
+    }
+  }
+}
