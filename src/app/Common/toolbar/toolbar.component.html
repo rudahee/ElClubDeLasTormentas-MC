@@ -5,13 +5,9 @@
   <mat-menu #menu="matMenu">
     <button mat-menu-item [routerLink]="['/empezando']">empezando</button>
     <button mat-menu-item [routerLink]="['/mods']">lista-mods</button>
-    <button mat-menu-item [routerLink]="['/all-setups']">All Setups</button>
-    <button mat-menu-item [matMenuTriggerFor]="LoginOptions">Loggin Methods</button>
   </mat-menu>
   <mat-menu #LoginOptions="matMenu">
     <button mat-menu-item [routerLink]="['/login']">Loggin</button>
-    <button mat-menu-item [routerLink]="['/register']">Register</button>
-    <button mat-menu-item [routerLink]="['/logged']">Logged?</button>
   </mat-menu>
   <span [routerLink]="['/home']">El Club De Las Tormentas - MC</span>
   <span class="spacer"></span>
