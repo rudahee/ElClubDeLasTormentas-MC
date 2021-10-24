@@ -23,6 +23,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { GettingStartedComponent } from './components/getting-started/getting-started.component';
 import { ModsComponent } from './components/mods/mods.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { ModsComponent } from './components/mods/mods.component';
     MatStepperModule,
     MatListModule
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
