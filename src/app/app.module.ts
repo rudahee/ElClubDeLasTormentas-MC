@@ -23,7 +23,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { GettingStartedComponent } from './components/getting-started/getting-started.component';
 import { ModsComponent } from './components/mods/mods.component';
-import { APP_BASE_HREF } from '@angular/common';
 import { ModDescriptionsComponent } from './components/mod-descriptions/mod-descriptions.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { HomeComponent } from './components/home/home.component';

@@ -3,15 +3,16 @@
     <mat-icon>{{menuTrigger.menuOpen ? 'expand_more' : 'menu'}}</mat-icon>
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item [routerLink]="['/empezando']">empezando</button>
-    <button mat-menu-item [routerLink]="['/lista-mods']">lista-mods</button>
-    <button mat-menu-item [routerLink]="['/mods']">mods-descripcion</button>
-    <button mat-menu-item [routerLink]="['/rules']">reglas</button>
+    <button mat-menu-item [routerLink]="['/home']">Home</button>
+    <button mat-menu-item [routerLink]="['/empezando']">Instalacion</button>
+    <button mat-menu-item [routerLink]="['/lista-mods']">Lista de Mods</button>
+    <button mat-menu-item [routerLink]="['/mods']">Funcionamiento de Mods</button>
+    <button mat-menu-item [routerLink]="['/reglas']">Reglas</button>
   </mat-menu>
   <mat-menu #LoginOptions="matMenu">
     <button mat-menu-item [routerLink]="['/login']">Loggin</button>
   </mat-menu>
-  <span [routerLink]="['/home']">El Club De Las Tormentas - MC</span>
+  <span [routerLink]="['/home']" style="cursor:pointer;">El Club De Las Tormentas - MC</span>
   <span class="spacer"></span>
   <a mat-flat-button target="_blank" href="https://www.youtube.com/c/ElClubdelasTormentas">Youtube</a>
   &nbsp;

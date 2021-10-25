@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
   { path: 'empezando', component: GettingStartedComponent },
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent, redirectTo:'' },
   { path: 'lista-mods', component: ModsComponent },
   { path: 'mods', component: ModDescriptionsComponent },
   { path: 'reglas', component: RulesComponent }
