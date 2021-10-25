@@ -25,6 +25,8 @@ import { GettingStartedComponent } from './components/getting-started/getting-st
 import { ModsComponent } from './components/mods/mods.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { ModDescriptionsComponent } from './components/mod-descriptions/mod-descriptions.component';
+import { RulesComponent } from './components/rules/rules.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { ModDescriptionsComponent } from './components/mod-descriptions/mod-desc
     GettingStartedComponent,
     ModsComponent,
     ModDescriptionsComponent,
+    RulesComponent,
+    HomeComponent,
   ],
   imports: [
     ClipboardModule,
