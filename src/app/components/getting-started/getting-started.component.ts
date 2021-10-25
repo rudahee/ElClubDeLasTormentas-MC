@@ -15,10 +15,10 @@ export class GettingStartedComponent implements OnInit {
 
   list_requisitos: string[] = [
     'Minecraft 1.16.5 instalado. (Premium o No Premium)',
-    'Algún programa para extraer archivos, como WinRAR',
-    'Carpeta "Mods" de discord',
-    'Carpeta "Mods Opcionales" de discord',
-    'Tener Java 16 o superior instalado'
+    'Algún programa para extraer archivos, como WinRAR.',
+    'Carpeta "Mods" de discord.',
+    'Carpeta "Mods Opcionales" de discord.',
+    'Tener Java 16 o superior instalado.'
   ];
 
 

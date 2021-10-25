@@ -24,6 +24,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { GettingStartedComponent } from './components/getting-started/getting-started.component';
 import { ModsComponent } from './components/mods/mods.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { ModDescriptionsComponent } from './components/mod-descriptions/mod-descriptions.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { APP_BASE_HREF } from '@angular/common';
     ToolbarComponent,
     GettingStartedComponent,
     ModsComponent,
+    ModDescriptionsComponent,
   ],
   imports: [
     ClipboardModule,
